@@ -135,144 +135,89 @@ footer{
     fill: white;
   }
 
+  /* FORMULARIO AUTO 0KM O USADO */
+
+  .navegacion{
+    background: #89119d;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacion__enlace{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.botonesform{
+    text-decoration: none;
+}
+
+.subtitulos{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+/*FORMULARIO Y BUSQUEDA*/
+
+.botonesform:hover{
+    color: orange;
+}
+
+.botonesform:focus{
+    color:orangered;
+}
+
+.campobusqueda {
+  position: relative;
+  width: 50%;
+}
+.buscarauto{
+  width: 60%;
+}
+.iconlupa{
+  width: 4.5%;
+  margin: 0;
+}
+
   /* TARJETAS DE PRODUCTOS AUTOS */
+ 
+
 
   .card {
+    box-sizing: border-box;
     width: 190px;
     height: 254px;
-    padding: .8em;
-    background: #f5f5f5;
-    position: relative;
-    overflow: visible;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    margin: 1rem;
-   }
-   
-   .imagen-tarj{
-    height: 90%;
-    width: 90%;
-    border-radius: .5rem;
-    
-   }
-
-   .card-img {
-    background-color: #ffcaa6;
-    height: 40%;
-    width: 100%;
-    border-radius: .5rem;
-    transition: .3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-   
-   .card-info {
-    padding-top: 10%;
-   }
-   
-   svg {
-    width: 20px;
-    height: 20px;
-   }
-   
-   .card-footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
-   }
-   
-   /*Text*/
-   .text-title {
-    font-weight: 900;
-    font-size: 1.2em;
-    line-height: 1.5;
-   }
-   
-   .text-body {
-    font-size: .9em;
-    padding-bottom: 10px;
-   }
-   
-   /*Button*/
-   .card-button {
-    border: 1px solid #252525;
-    display: flex;
-    padding: .3em;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
     cursor: pointer;
-    border-radius: 50px;
-    transition: .3s ease-in-out;
-   }
-   
-   /*Hover*/
-   .card-img:hover {
-    transform: translateY(-25%);
-    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
-   }
-   
-   .card-button:hover {
-    border: 1px solid #ffcaa6;
-    background-color: #ffcaa6;
-   }
-
-   /* flip card tarjeta autos */
-
-   .flip-card {
-    background-color: transparent;
-    width: 190px;
-    height: 254px;
-    perspective: 1000px;
-    font-family: sans-serif;
-  }
-  
-  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
+    transition: all 0.5s;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid coral;
-    border-radius: 1rem;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
   }
   
-  .flip-card-front {
-    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
-       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
-    color: coral;
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
   }
   
-  .flip-card-back {
-    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
-       bisque 40%, rgb(255, 185, 160) 78%);
-    color: white;
-    transform: rotateY(180deg);
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
   }
+
+   /* FIN TARJETAS AUTOS */
+
   .logofoot{
     display: flex;
     justify-content: center;
