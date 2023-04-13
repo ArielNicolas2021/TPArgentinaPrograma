@@ -108,7 +108,7 @@ a{
     width: 100%;
     height: 600px;
     color: white;
-    background-image: url(assets/Fondo.webp);
+    background-image: url(assets/index/Fondo.webp);
     padding: 15vw 0;
     line-height: 3;
     background-size: cover;
@@ -146,8 +146,12 @@ a{
 }
 .cards{
     display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
 }
 #card{
+    flex: 1 0 auto;
     margin: 0 10px;
     border: 2px solid var(--second-color);
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
@@ -161,45 +165,22 @@ a{
 #card p{
     margin-left: 20px;
 }
-.arrows{
-    margin-top: 40px;
-}
-.arrow-left{
-    background-color: var(--fifth-color);
-    color: var(--second-color);
-    border: 2px solid var(--second-color);
-    border-radius: 5px;
-    padding: 13px 17px 15px;
-    font-size: 12px;
-    transition: all 0.3s;
-}
-.arrow-left:hover{
-    font-size: 14px;
-}
-.arrow-right{
-    background-color: var(--fifth-color);
-    color: var(--second-color);
-    border: 2px solid var(--second-color);
-    border-radius: 5px;
-    padding: 13px 17px 15px;
-    font-size: 12px;
-    transition: all 0.3s;
-}
-.arrow-right:hover{
-    font-size: 14px;
-}
 .nuevos-btn{
+    margin: 40px 0;
     text-align: center;
 }
 .nuevos-btn a{
-    margin: 20px 0 0 120px;
     background-color: var(--second-color);
-    color: var(--fifth-color);
+    color: var(--primary-color);
     border: 2px solid var(--primary-color);
     border-radius: 5px;
     padding: 13px 17px 15px;
     font-size: 12px;
     transition: all 0.3s;
+}
+.nuevos-btn a:hover{
+    font-size: 14px;
+    color: var(--fifth-color);
 }
 
 /* Cards de autos usados */
@@ -209,10 +190,41 @@ a{
 }
 .usados-cards{
     display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
 }
 .usados-card{
+    flex: 1 0 auto;
     margin: 0 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
+    height: 320px;
+    background-color: white;
+    line-height: 2;
 }
+.usados-card h2,
+.usados-card h3,
+.usados-card p{
+    margin-left: 20px;
+}
+.usados-btn{
+    margin: 40px 0;
+    text-align: center;
+}
+.usados-btn a{
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 13px 17px 15px;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+.usados-btn a:hover{
+    font-size: 14px;
+    color: var(--fifth-color);
+}
+
 
 /* Footer */
 
@@ -411,5 +423,8 @@ footer{
     .hero-content{
         margin-left: 30px;
         margin-top: 60px;
+    }
+    #nuevos h1{
+        text-align: center;
     }
 }
