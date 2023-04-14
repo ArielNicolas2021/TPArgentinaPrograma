@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap);
 :root{
     --primary-color:#9FA2A6;
     --second-color:#F2F2F2;
@@ -19,6 +20,7 @@ a{
 }
 
 /* Header */
+
 .top-header{
     position: fixed;
     background-color: var(--second-color);
@@ -235,6 +237,13 @@ footer{
 
 /* ICONOS DEL FOOTER */
 
+.logofoot{
+    text-align: center;
+}
+.logofoot img{
+    background-color: white;
+    border: 4px solid black;
+}
 .copy{
     color: var(--second-color);
     text-align: center;
