@@ -239,9 +239,13 @@ footer{
 
 .logofoot{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 4px;
 }
 .logofoot img{
-    background-color: white;
     border: 4px solid black;
 }
 .copy{
