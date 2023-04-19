@@ -162,10 +162,9 @@ a{
     top: -3px;
 }
 
-.card h3{
-    margin-left: 20px;
-}
-.card p{
+.card h3,
+.card p,
+.card h2{
     margin-left: 20px;
 }
 .nuevos-btn{
@@ -227,6 +226,9 @@ a{
 .usados-btn a:hover{
     font-size: 14px;
     color: var(--fifth-color);
+}
+span{
+    color: #024902;
 }
 
 

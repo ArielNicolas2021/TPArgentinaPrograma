@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap);
+:root{
+    --primary-color:#9FA2A6;
+    --second-color:#F2F2F2;
+    --third-color: #404040;
+    --fourth-color: #262626;
+    --fifth-color: #0D0D0D;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #F2F2F2;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header */
+
+.top-header{
+    position: fixed;
+    background-color: var(--second-color);
+    box-shadow: 0 4px 5px #e5e5e5;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.top-nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+}
+.logo{
+    background-color:var(--second-color);
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    padding: 0 15px;
+}
+.menu a{
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+.menu a:hover{
+    color: var(--fifth-color);
+}
+.menu a::after{
+    content: "";
+    background-color: var(--fourth-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 4px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.menu a:hover::after{
+    opacity: 1;
+}
+.search{
+    display: flex;
+    align-items: center;
+
+}
+.search-input{
+    border:none;
+    line-height: 25px;
+
+}
+.search-btn{
+    background: var(--second-color);
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 7px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+.search-btn:hover{
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+.search-btn:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+.menu-open,
+.menu-close{
+    display: none;
+}
+
+/* Form */
+
+#formulario{
+    margin-top: 120px;
+}
+.page:not(.show) {
+    display: none;
+}
+/* Estilo general del formulario */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo de las páginas del formulario */
+.page {
+    margin-bottom: 20px;
+}
+
+/* Estilo de los botones de navegación del formulario */
+button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #337ab7;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23527c;
+}
+
+/* Estilo del botón de comprar */
+button[type="submit"] {
+    background-color: #5cb85c;
+}
+
+button[type="submit"]:hover {
+    background-color: #449d44;
+}
+
+/* Estilo de los campos de entrada del formulario */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+legend {
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+select {
+    width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc
+}
+
+#info-modelo {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+

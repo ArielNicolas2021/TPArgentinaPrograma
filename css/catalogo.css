@@ -129,10 +129,26 @@ a{
     display: flex;
     justify-content: center;
 }
+#nuevos-btn,
+#usados-btn{
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 13px 17px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+#nuevos-btn:hover,
+#usados-btn:hover{
+    font-size: 14px;
+    color: var(--fifth-color);
+}
 #cards{
     display: grid;
     gap: 1rem;
-    grid-auto-rows: 332px;
+    grid-auto-rows: 340px;
     grid-template-columns: repeat(auto-fill, minmax(320px,332px));
     justify-content: center;
 }
@@ -156,11 +172,13 @@ a{
     top: -3px;
 }
 
-.card h3{
+.card h3,
+.card p,
+.card h2{
     margin-left: 20px;
 }
-.card p{
-    margin-left: 20px;
+span{
+    color: #024902;
 }
 #nuevos{
     display: block;

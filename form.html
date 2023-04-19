@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Formulario de Compra</title>
-	<link rel="stylesheet" type="text/css" href="form.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximus-scale=1.0, minimus-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <script src="https://kit.fontawesome.com/b9baf24cd4.js" crossorigin="anonymous"></script>
+    <script defer src="js/navbar.js"></script>
+
+    <title>Catálogo | Concesionaria G4</title>
 </head>
 <body>
+    <!-- Navbar -->
+
+    <header class="top-header">
+        <nav class="top-nav">
+            <a href="index.html" class="logo"><img src="assets/logo2.png" alt="Concesionaria G4" width="75"></a>
+            <button class="menu-open" type="button" aria-label="Abrir menú"><i class="fa-solid fa-bars fa-3x"></i></button>
+            <ul class="menu">
+                <button class="menu-close" type="button" aria-label="Cerrar menú"><i class="fa-solid fa-xmark fa-3x"></i></button>
+                <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="#">Plan de ahorro</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <form class="search" role="search">
+                    <input class="search-input" type="search" placeholder="Buscar...">
+                    <button class="search-btn" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i></button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form -->
+
 	<form id="formulario" action="#" method="post">
         <div id="page-1" class="page">
             <h2>Selecciona un modelo de automóvil</h2>
@@ -43,5 +70,5 @@
     
     
 </body>
-<script src="form.js"></script>
+<script src="js/form.js"></script>
 </html>
