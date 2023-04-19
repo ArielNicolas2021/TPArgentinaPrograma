@@ -121,6 +121,9 @@ a{
 
 /* Cards */
 
+.miembros-title{
+    text-align: center;
+}
 #cartas{
     display: flex;
     align-items: center;
@@ -191,6 +194,11 @@ a{
     background: #0b6164;
     transition: .3s;
 }
+#map {
+	height: 500px;
+	width: 100%;
+}
+
 
 /* Footer */
 

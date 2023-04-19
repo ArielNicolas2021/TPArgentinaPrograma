@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximus-scale=1.0, minimus-scale=1.0">
     <title>Plan de ahorro</title>
     <link rel="stylesheet" href="/css/planDeAhorro.css">
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <script src="https://kit.fontawesome.com/b9baf24cd4.js" crossorigin="anonymous"></script>
     <script defer src="js/navbar.js"></script>
@@ -35,43 +34,40 @@
     <!-- Form -->
 
     <form id="contact-form">
-        <div class="titulo">
-         <h1><p>Si estas interesado en un plan de ahorro para adquirir tu 0km</p> 
-            <p>Completá el formulario y un asesor se estará comunicando con vos</p>
-        </h1>
-        </div>
-
-         <div class="form-group">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" pattern="[a-zA-Z]{3,}" required>
-  </div>
-  <div class="form-group">
-    <label for="surname">Apellido:</label>
-    <input type="text" id="surname" name="surname" pattern="[a-zA-Z]{3,}" required>
-  </div>
-  <div class="form-group">
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <div class="form-group">
-    <label for="phone">Teléfono:</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" required>
-  </div>
-  <div class="form-group">
-    <label for="province">Provincia:</label>
-    <input type="text" id="province" name="province" pattern="[a-zA-Z]{3,}" required>
-  </div>
-  <div class="form-group">
-    <label for="city">Ciudad:</label>
-    <input type="text" id="city" name="city" pattern="[a-zA-Z]{3,}" required>
-  </div>
-  <div class="form-group">
-    <label for="zip">Código Postal:</label>
-    <input type="text" id="zip" name="zip" pattern="[0-9]{4,}" required>
-  </div>
-  <button type="submit">Enviar</button>
-  <p id="success-message" style="display:none">Enviado con éxito, pronto nos contactaremos</p>
-      </form>
+      <div class="titulo">
+        <h1>Si estas interesado en un plan de ahorro para adquirir tu 0km, completá el formulario y un asesor se estará comunicando con vos</h1>
+      </div>
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" pattern="[a-zA-Z]{3,}" required>
+      </div>
+      <div class="form-group">
+        <label for="surname">Apellido:</label>
+        <input type="text" id="surname" name="surname" pattern="[a-zA-Z]{3,}" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" required>
+      </div>
+      <div class="form-group">
+        <label for="province">Provincia:</label>
+        <input type="text" id="province" name="province" pattern="[a-zA-Z]{3,}" required>
+      </div>
+      <div class="form-group">
+        <label for="city">Ciudad:</label>
+        <input type="text" id="city" name="city" pattern="[a-zA-Z]{3,}" required>
+      </div>
+      <div class="form-group">
+        <label for="zip">Código Postal:</label>
+        <input type="text" id="zip" name="zip" pattern="[0-9]{4,}" required>
+      </div>
+      <button type="submit" id="enviar">Enviar</button>
+      <p id="success-message" style="display:none">Enviado con éxito, pronto nos contactaremos</p>
+    </form>
 
          <!-- FOOTER -->
     <footer>
