@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+:root{
+    --primary-color:#9FA2A6;
+    --second-color:#F2F2F2;
+    --third-color: #404040;
+    --fourth-color: #262626;
+    --fifth-color: #0D0D0D;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #F2F2F2;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header */
+.top-header{
+    position: fixed;
+    background-color: var(--second-color);
+    box-shadow: 0 4px 5px #e5e5e5;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.top-nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+}
+.logo{
+    background-color:var(--second-color);
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    padding: 0 15px;
+}
+.menu a{
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+.menu a:hover{
+    color: var(--fifth-color);
+}
+.menu a::after{
+    content: "";
+    background-color: var(--fourth-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 4px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.menu a:hover::after{
+    opacity: 1;
+}
+.search{
+    display: flex;
+    align-items: center;
+
+}
+.search-input{
+    border:none;
+    line-height: 25px;
+
+}
+.search-btn{
+    background: var(--second-color);
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 7px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+.search-btn:hover{
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+.search-btn:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+.menu-open,
+.menu-close{
+    display: none;
+}
+
+/* Formulario de contacto */
+.titulo {
+    margin-top: 90px
+} 
+.form-group {
+    margin-bottom: 1rem;
+}
+  
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+  
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+  
+#enviar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+  
+#enviar:hover {
+    background-color: #0069d9;
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+}
+
+/* ICONOS DEL FOOTER */
+
+.logofoot{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 4px;
+}
+.logofoot img{
+    border: 4px solid black;
+}
+.copy{
+    color: var(--second-color);
+    text-align: center;
+}
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-right: 0.5rem;
+}
+  
+.up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+  
+.down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+  
+.card1 {
+    width: 65px;
+    height: 65px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+  
+.instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+}
+  
+.card2 {
+    width: 65px;
+    height: 65px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+  
+.twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+}
+  
+.card3 {
+    width: 65px;
+    height: 65px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+  
+.github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+}
+  
+.card4 {
+    width: 65px;
+    height: 65px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+  
+.discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+}
+  
+.card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+}
+  
+.card1:hover .instagram {
+    fill: white;
+}
+  
+.card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+}
+  
+.card2:hover .twitter {
+    fill: white;
+}
+  
+.card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+}
+  
+.card3:hover .github {
+    fill: white;
+}
+  
+.card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+}
+  
+.card4:hover .discord {
+    fill: white;
+}
