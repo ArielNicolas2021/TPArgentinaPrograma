@@ -12,6 +12,7 @@ body{
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
   background: #F2F2F2;
+  flex-direction: column;
 
 }
 ::selection{

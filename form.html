@@ -49,11 +49,11 @@
           <div class="page slide-page">
             <div class="field">
               <div class="label">Nombre Completo</div>
-              <input type="text">
+              <input type="text" pattern="[a-zA-Z]{3,}" required>
             </div>
             <div class="field">
               <div class="label">Apellidos</div>
-              <input type="text">
+              <input type="text" location.reload();>
             </div>
             <div class="field">
               <button class="firstNext next">Siguiente</button>
@@ -64,11 +64,11 @@
             <div class="title">Información de Contacto</div>
             <div class="field">
               <div class="label">Correo Electronico</div>
-              <input type="text">
+              <input type="email" required>
             </div>
             <div class="field">
               <div class="label">Número de Telefono</div>
-              <input type="Number">
+              <input type="tel" pattern="[0-9]{10,}" required>
             </div>
             <div class="field btns">
               <button class="prev-1 prev">Atrás</button>
@@ -79,7 +79,7 @@
           <div class="page">
             <div class="field">
               <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local">
+              <input type="datetime-local" required>
             </div>
             <div class="field">
               <div class="label">Genero</div>
@@ -98,11 +98,11 @@
             <div class="title">Datos de Login</div>
             <div class="field">
               <div class="label">Usuario</div>
-              <input type="text">
+              <input type="text" pattern="[a-zA-Z]{3,}" required>
             </div>
             <div class="field">
               <div class="label">Clave</div>
-              <input type="password">
+              <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra mayúscula y minúscula, y al menos 8 o más caracteres" required>
             </div>
             <div class="field btns">
               <button class="prev-3 prev">Atrás</button>
